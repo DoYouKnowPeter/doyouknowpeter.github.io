@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO you know Peter?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .menu {
+            display: none;
+        }
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+        }
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+        }
+        @media (min-width: 768px) {
+            .menu {
+                display: flex;
+            }
+            .menu-icon {
+                display: none;
+            }
+        }
+        section {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Site</h1>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu" id="menu">
+            <a href="#about">About Me</a>
+            <a href="#professional">Professional</a>
+            <a href="#music">Music</a>
+            <a href="#projects">Projects</a>
+            <a href="#thoughts">Thoughts</a>
+            <a href="#donate">Donate</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Content goes here...</p>
+    </section>
+    <section id="professional">
+        <h2>Professional</h2>
+        <p>Content goes here...</p>
+    </section>
+    <section id="music">
+        <h2>Music</h2>
+        <p>Content goes here...</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Content goes here...</p>
+    </section>
+    <section id="thoughts">
+        <h2>Thoughts</h2>
+        <p>Content goes here...</p>
+    </section>
+    <section id="donate">
+        <h2>Donate</h2>
+        <p>Content goes here...</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Content goes here...</p>
+    </section>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+<section id="landing">
+    <h2>JUST getting started, so watch this space.</h2>
+    <p>If you are in a position to do so and want to help a brother out, ANY donation no matter how small helps and is GREATLY appreciated.</p>
+    <p>
+        <a href="https://www.buymeacoffee.com/doyouknowpeter" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Aiga_coffee.svg/1024px-Aiga_coffee.svg.png" alt="Buy Me a Coffee" style="width: 24px; height: 24px; vertical-align: middle;">
+            Buy Me a Coffee
+        </a>
+    </p>
+</section></a>
